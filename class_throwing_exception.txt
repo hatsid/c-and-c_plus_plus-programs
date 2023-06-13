@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class mydata
+{
+     int a;
+     public:
+     mydata(){}
+     mydata(int a,string error)
+     {
+          cout<<a<<error;
+     }
+     void fun(int c)  
+     {
+          int b=10;
+         if(a==0)
+         {
+              
+             throw  mydata(10,"errror");
+               
+         }
+     }
+     
+};
+int main()
+{    mydata d1;
+     try
+     {
+          d1.fun(0);
+          
+     }
+     catch(mydata )
+     {
+        
+     }
+}
